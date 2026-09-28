@@ -1,0 +1,49 @@
+{
+ "filer": {"name_as_printed":"SENCO GOLD LIMITED","cin_as_printed":null,"input_filer_name":"SENCO GOLD LIMITED","input_cin":"L36911WB1994PLC064637","fy_as_printed":"Annual Report 2025-26; 1st April, 2025 to 31st March, 2026"},
+ "page_map": [
+  {"pdf_page":1,"printed_folio":"78","contains":"Annexure I Form AOC-1, Part A transposed table (3 subsidiary columns), notes, Part B NIL, signature block","proof_first_line":"SENCO GOLD LIMITED Annual Report 2025-26"}
+ ],
+ "ignored_non_aoc_content": [],
+ "statement_heading_verbatim": "ANNEXURE I FORM AOC-1 (Pursuant to first proviso to sub-section (3) of Section 129 read with Rule 5 of Companies (Accounts) Rules, 2014) Statement containing salient features of the financial statements of Subsidiary / Associate Company / Joint Venture Part \"A\": Subsidiary",
+ "layout": "TRANSPOSED",
+ "denomination": {"format_class":"FORMAT_1",
+    "s1_unit_lines_verbatim":["(Amount in Million)"], "s1_mid_table_stamps_verbatim":[], "s1_footer_lines_verbatim":[],
+    "statutory_caption_present":false, "inr_unit":"MILLION",
+    "foreign_unit":null, "s2_role":"NOTIONAL",
+    "s3_rate_block_verbatim":"none printed", "rates_printed":"NONE",
+    "evidence_one_line":"One '(Amount in Million)' header for all columns with no exchange rate printed anywhere; the AED column (Senco Global Jewellery Trading LLC, UAE) is read under the same header as INR million — no currency word in header, so the AED column's reading is doubtful (flagged per row)."},
+ "part_a_roster": [
+  {"position":1,"sr_printed":null,"name":"Senco Gold Artisanship Private Limited"},
+  {"position":2,"sr_printed":null,"name":"Senco Global Jewellery Trading LLC, UAE"},
+  {"position":3,"sr_printed":null,"name":"Sennes Fashion Limited"}
+ ],
+ "part_a_count_printed": 3,
+ "part_a_rows": [
+  {"Name of the Subsidiary Company":"Senco Gold Artisanship Private Limited","Date since when the subsidiary was acquired/incorporated":"14-10-2020","Reporting period of the subsidiary concerned":"1st April, 2025 to 31st March, 2026","Reporting Currency":"INR","Share Capital":"65","Reserves & Surplus":"(6.19)","Total Assets":"480.12","Total Liabilities":"480.12","Investments":"0","Turnover":"643.86","Profit before taxation":"49.25","Provision for taxation":"1.83","Profit after taxation":"47.42","Proposed Dividend":null,"Extent of shareholding in %":"100%",
+   "canonical":{"A01":null,"A02":"Senco Gold Artisanship Private Limited","A03":"14-10-2020","A04":"1st April, 2025 to 31st March, 2026","A05":"INR","A06":"65","A07":"(6.19)","A08":"480.12","A09":"480.12","A10":"0","A11":"643.86","A12":"49.25","A13":"1.83","A14":"47.42","A15":null,"A16":"100%"},
+   "denomination_for_this_row":"INR MILLION","row_kind":"SINGLE","reporting_currency_raw":"INR","exchange_rate_raw":null,"footnote_marks":null,"row_period_as_printed":"1st April, 2025 to 31st March, 2026","row_notes":"Sl. No. 1-14 index particulars, not subsidiaries."},
+  {"Name of the Subsidiary Company":"Senco Global Jewellery Trading LLC, UAE","Date since when the subsidiary was acquired/incorporated":"14-02-2023","Reporting period of the subsidiary concerned":"1st April, 2025 to 31st March, 2026","Reporting Currency":"AED","Share Capital":"8.83","Reserves & Surplus":"(5.18)","Total Assets":"83.74","Total Liabilities":"83.74","Investments":"0","Turnover":"122.75","Profit before taxation":"(2.26)","Provision for taxation":"(0.24)","Profit after taxation":"(2.02)","Proposed Dividend":null,"Extent of shareholding in %":"100%",
+   "canonical":{"A01":null,"A02":"Senco Global Jewellery Trading LLC, UAE","A03":"14-02-2023","A04":"1st April, 2025 to 31st March, 2026","A05":"AED","A06":"8.83","A07":"(5.18)","A08":"83.74","A09":"83.74","A10":"0","A11":"122.75","A12":"(2.26)","A13":"(0.24)","A14":"(2.02)","A15":null,"A16":"100%","X_country":"UAE"},
+   "denomination_for_this_row":"INR MILLION","row_kind":"SINGLE","reporting_currency_raw":"AED","exchange_rate_raw":null,"footnote_marks":null,"row_period_as_printed":"1st April, 2025 to 31st March, 2026","row_notes":"Reporting currency AED with no rate printed; header '(Amount in Million)' carries no currency. Candidate readings {INR million (header governs, FORMAT_1), AED million}. INR-million reading taken per single-header rule; AED-million alternative would be ~23x larger."},
+  {"Name of the Subsidiary Company":"Sennes Fashion Limited","Date since when the subsidiary was acquired/incorporated":"07-09-2024","Reporting period of the subsidiary concerned":"1st April, 2025 to 31st March, 2026","Reporting Currency":"INR","Share Capital":"150.5","Reserves & Surplus":"(90.24)","Total Assets":"1248.35","Total Liabilities":"1248.35","Investments":"0","Turnover":"849.43","Profit before taxation":"(84.71)","Provision for taxation":"(1.34)","Profit after taxation":"(83.37)","Proposed Dividend":null,"Extent of shareholding in %":"100%",
+   "canonical":{"A01":null,"A02":"Sennes Fashion Limited","A03":"07-09-2024","A04":"1st April, 2025 to 31st March, 2026","A05":"INR","A06":"150.5","A07":"(90.24)","A08":"1248.35","A09":"1248.35","A10":"0","A11":"849.43","A12":"(84.71)","A13":"(1.34)","A14":"(83.37)","A15":null,"A16":"100%"},
+   "denomination_for_this_row":"INR MILLION","row_kind":"SINGLE","reporting_currency_raw":"INR","exchange_rate_raw":null,"footnote_marks":null,"row_period_as_printed":"1st April, 2025 to 31st March, 2026","row_notes":null}
+ ],
+ "part_a_rows_emitted": 3, "part_a_roster_vs_rows_match": true, "truncated_after": null,
+ "part_b": {"status":"NIL_AS_PRINTED","verbatim":"Part B: Associates & Joint Ventures: NIL","rows":[]},
+ "notes": {"footnotes_verbatim":[],
+   "yet_to_commence_names":[],
+   "liquidated_sold_merged_ceased_names":[],
+   "other_notes_verbatim":["Names of subsidiaries which are yet to commence operations: NIL","Names of subsidiaries which have been liquidated or sold during the year: NIL"],
+   "signature_block":{"date":"26th May, 2026","place":"Kolkata","signatories_count":4}},
+ "restated_inr_crore": [
+  {"position":1,"name":"Senco Gold Artisanship Private Limited","method":"UNIT_FACTOR","share_capital":6.50,"share_capital_formula":"65 (₹ Mn) ÷ 10 = 6.50","reserves_surplus":-0.62,"reserves_surplus_formula":"(6.19) (₹ Mn) ÷ 10 = -0.62","total_assets":48.01,"total_assets_formula":"480.12 (₹ Mn) ÷ 10 = 48.01","total_liabilities":48.01,"total_liabilities_formula":"480.12 (₹ Mn) ÷ 10 = 48.01","investments":0,"investments_formula":"0 (₹ Mn) ÷ 10 = 0","turnover":64.39,"turnover_caption_used":"Turnover","turnover_formula":"643.86 (₹ Mn) ÷ 10 = 64.39","pbt":4.93,"pbt_formula":"49.25 (₹ Mn) ÷ 10 = 4.93","tax":0.18,"tax_formula":"1.83 (₹ Mn) ÷ 10 = 0.18","pat":4.74,"pat_formula":"47.42 (₹ Mn) ÷ 10 = 4.74","tnw":5.88,"fy":"FY2025-26","confidence":"HIGH","why_null":null,"checks":["gross convention: total liabilities = total assets","PBT - tax = 47.42 OK"]},
+  {"position":2,"name":"Senco Global Jewellery Trading LLC, UAE","method":"UNIT_FACTOR","share_capital":0.88,"share_capital_formula":"8.83 (₹ Mn) ÷ 10 = 0.88","reserves_surplus":-0.52,"reserves_surplus_formula":"(5.18) (₹ Mn) ÷ 10 = -0.52","total_assets":8.37,"total_assets_formula":"83.74 (₹ Mn) ÷ 10 = 8.37","total_liabilities":8.37,"total_liabilities_formula":"83.74 (₹ Mn) ÷ 10 = 8.37","investments":0,"investments_formula":"0 (₹ Mn) ÷ 10 = 0","turnover":12.28,"turnover_caption_used":"Turnover","turnover_formula":"122.75 (₹ Mn) ÷ 10 = 12.28","pbt":-0.23,"pbt_formula":"(2.26) (₹ Mn) ÷ 10 = -0.23","tax":-0.02,"tax_formula":"(0.24) (₹ Mn) ÷ 10 = -0.02","pat":-0.20,"pat_formula":"(2.02) (₹ Mn) ÷ 10 = -0.20","tnw":0.37,"fy":"FY2025-26","confidence":"LOW","why_null":null,"checks":["gross convention: total liabilities = total assets","PBT - tax = -2.02 OK","reporting currency AED with no printed rate; header lacks currency word — if figures were AED million the restatement would need a rate not printed (would be NULL, NO_PRINTED_RATE)"]},
+  {"position":3,"name":"Sennes Fashion Limited","method":"UNIT_FACTOR","share_capital":15.05,"share_capital_formula":"150.5 (₹ Mn) ÷ 10 = 15.05","reserves_surplus":-9.02,"reserves_surplus_formula":"(90.24) (₹ Mn) ÷ 10 = -9.02","total_assets":124.84,"total_assets_formula":"1248.35 (₹ Mn) ÷ 10 = 124.84","total_liabilities":124.84,"total_liabilities_formula":"1248.35 (₹ Mn) ÷ 10 = 124.84","investments":0,"investments_formula":"0 (₹ Mn) ÷ 10 = 0","turnover":84.94,"turnover_caption_used":"Turnover","turnover_formula":"849.43 (₹ Mn) ÷ 10 = 84.94","pbt":-8.47,"pbt_formula":"(84.71) (₹ Mn) ÷ 10 = -8.47","tax":-0.13,"tax_formula":"(1.34) (₹ Mn) ÷ 10 = -0.13","pat":-8.34,"pat_formula":"(83.37) (₹ Mn) ÷ 10 = -8.34","tnw":6.03,"fy":"FY2025-26","confidence":"HIGH","why_null":null,"checks":["gross convention: total liabilities = total assets","PBT - tax = -83.37 OK"]}
+ ],
+ "restated_part_b": [],
+ "completion": {"part_a_count_printed":3,"part_a_rows_emitted":3,"part_b_rows_emitted":0,
+    "restated_rows_emitted":3,"format_class":"FORMAT_1","truncated":false,"pages_read":[1],
+    "sr_sequence_note":"no Sr column for subsidiaries (transposed; Sl. No. 1-14 index particulars). Printed filer name matches input; CIN not printed on page (input CIN unverified).",
+    "model_used":"claude-opus-5-5","read_mode":"visual page read, Read tool"}
+}

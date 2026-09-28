@@ -1,0 +1,49 @@
+{
+ "filer": {"name_as_printed":null,"cin_as_printed":null,"input_filer_name":"DEEPAK CHEMTEX LIMITED","input_cin":"L24110PN1997PLC211935","fy_as_printed":"Integrated Annual Report 2025-26"},
+ "page_map": [
+  {"pdf_page":1,"printed_folio":"51","contains":"Annexure 'A' Form AOC-I heading, Part A transposed table (3 subsidiary columns, particulars 1-14), notes 1-2","proof_first_line":"ANNEXURE 'A'"}
+ ],
+ "ignored_non_aoc_content": [],
+ "statement_heading_verbatim": "ANNEXURE 'A' Form AOC-I (Pursuant to first proviso to sub-section (3) of section 129 read with rule 5 of Companies (Accounts) Rules, 2014) Statement containing salient features of the financial statement of Subsidiaries/associate companies/joint ventures Part \"A\": Subsidiaries (Information in respect of each subsidiary to be presented with amounts in Lakhs.)",
+ "layout": "TRANSPOSED",
+ "denomination": {"format_class":"FORMAT_1",
+    "s1_unit_lines_verbatim":["(Information in respect of each subsidiary to be presented with amounts in Lakhs.)"], "s1_mid_table_stamps_verbatim":[], "s1_footer_lines_verbatim":[],
+    "statutory_caption_present":true, "inr_unit":"LAKH",
+    "foreign_unit":null, "s2_role":"NOTIONAL",
+    "s3_rate_block_verbatim":"none printed", "rates_printed":"NONE",
+    "evidence_one_line":"Statutory caption carries the scale 'amounts in Lakhs.'; no reporting-currency or rate line printed; all three columns balance (SC+R+L=TA) in the same lakh terms."},
+ "part_a_roster": [
+  {"position":1,"sr_printed":null,"name":"DCPL Speciality Chemicals Private Limited"},
+  {"position":2,"sr_printed":null,"name":"South West Corporation"},
+  {"position":3,"sr_printed":null,"name":"Atlas Tints Inc."}
+ ],
+ "part_a_count_printed": 3,
+ "part_a_rows": [
+  {"Name of the subsidiary":"DCPL Speciality Chemicals Private Limited","The Date since when subsidiary was acquired":"13.07.2021","Reporting period for the subsidiary concerned, if different from the holding company's reporting period":"NA","Share capital (including Preference Share Capital)":"10.00","Reserves & surplus":"325.66","Total assets":"3,372.82","Total Liabilities":"3,037.16","Investments":null,"Turnover":"2,508.95","Profit before taxation":"295.81","Provision for taxation":"73.68","Profit after taxation":"222.13","Proposed Dividend":null,"Extent of shareholding (in percentage) % of shareholding":"90%",
+   "canonical":{"A01":null,"A02":"DCPL Speciality Chemicals Private Limited","A03":"13.07.2021","A04":"NA","A05":null,"A06":"10.00","A07":"325.66","A08":"3,372.82","A09":"3,037.16","A10":null,"A11":"2,508.95","A12":"295.81","A13":"73.68","A14":"222.13","A15":null,"A16":"90%"},
+   "denomination_for_this_row":"INR LAKH","row_kind":"SINGLE","reporting_currency_raw":null,"exchange_rate_raw":null,"footnote_marks":null,"row_period_as_printed":"NA","row_notes":"Sr. no. 1-14 index particulars, not subsidiaries."},
+  {"Name of the subsidiary":"South West Corporation","The Date since when subsidiary was acquired":"13.04.2023","Reporting period for the subsidiary concerned, if different from the holding company's reporting period":"Yes","Share capital (including Preference Share Capital)":"0.85","Reserves & surplus":"141.02","Total assets":"731.50","Total Liabilities":"589.62","Investments":null,"Turnover":"1,288.56","Profit before taxation":"32.79","Provision for taxation":"5.78","Profit after taxation":"27.01","Proposed Dividend":null,"Extent of shareholding (in percentage) % of shareholding":"100%",
+   "canonical":{"A01":null,"A02":"South West Corporation","A03":"13.04.2023","A04":"Yes","A05":null,"A06":"0.85","A07":"141.02","A08":"731.50","A09":"589.62","A10":null,"A11":"1,288.56","A12":"32.79","A13":"5.78","A14":"27.01","A15":null,"A16":"100%"},
+   "denomination_for_this_row":"INR LAKH","row_kind":"SINGLE","reporting_currency_raw":null,"exchange_rate_raw":null,"footnote_marks":null,"row_period_as_printed":"Yes","row_notes":"Reporting period cell prints 'Yes' (different period) without stating the period; no currency/rate line printed although likely foreign."},
+  {"Name of the subsidiary":"Atlas Tints Inc.","The Date since when subsidiary was acquired":"20.01.2025","Reporting period for the subsidiary concerned, if different from the holding company's reporting period":"Yes","Share capital (including Preference Share Capital)":"0.0009","Reserves & surplus":"13.36","Total assets":"112.04","Total Liabilities":"98.68","Investments":null,"Turnover":"101.15","Profit before taxation":"-2.23","Provision for taxation":"0.20","Profit after taxation":"-2.44","Proposed Dividend":null,"Extent of shareholding (in percentage) % of shareholding":"100%",
+   "canonical":{"A01":null,"A02":"Atlas Tints Inc.","A03":"20.01.2025","A04":"Yes","A05":null,"A06":"0.0009","A07":"13.36","A08":"112.04","A09":"98.68","A10":null,"A11":"101.15","A12":"-2.23","A13":"0.20","A14":"-2.44","A15":null,"A16":"100%"},
+   "denomination_for_this_row":"INR LAKH","row_kind":"SINGLE","reporting_currency_raw":null,"exchange_rate_raw":null,"footnote_marks":null,"row_period_as_printed":"Yes","row_notes":"Reporting period 'Yes' without period stated; PBT -2.23 minus tax 0.20 = -2.43 vs PAT -2.44 (rounding)."}
+ ],
+ "part_a_rows_emitted": 3, "part_a_roster_vs_rows_match": true, "truncated_after": null,
+ "part_b": {"status":"MISSING_EXPECTED","verbatim":"Heading scope 'Subsidiaries/associate companies/joint ventures'; no Part B printed on the carve page","rows":[]},
+ "notes": {"footnotes_verbatim":[],
+   "yet_to_commence_names":[],
+   "liquidated_sold_merged_ceased_names":[],
+   "other_notes_verbatim":["Notes: The following information shall be furnished at the end of the statement:","1. Names of subsidiaries which are yet to commence operations – Not Applicable","2. Names of subsidiaries which have been liquidated or sold during the year – Not Applicable"],
+   "signature_block":{"date":null,"place":null,"signatories_count":0}},
+ "restated_inr_crore": [
+  {"position":1,"name":"DCPL Speciality Chemicals Private Limited","method":"UNIT_FACTOR","share_capital":0.10,"share_capital_formula":"10.00 (₹ lakh) ÷ 100 = 0.10","reserves_surplus":3.26,"reserves_surplus_formula":"325.66 (₹ lakh) ÷ 100 = 3.26","total_assets":33.73,"total_assets_formula":"3,372.82 (₹ lakh) ÷ 100 = 33.73","total_liabilities":30.37,"total_liabilities_formula":"3,037.16 (₹ lakh) ÷ 100 = 30.37","investments":null,"investments_formula":"'-' printed","turnover":25.09,"turnover_caption_used":"Turnover","turnover_formula":"2,508.95 (₹ lakh) ÷ 100 = 25.09","pbt":2.96,"pbt_formula":"295.81 (₹ lakh) ÷ 100 = 2.96","tax":0.74,"tax_formula":"73.68 (₹ lakh) ÷ 100 = 0.74","pat":2.22,"pat_formula":"222.13 (₹ lakh) ÷ 100 = 2.22","tnw":3.36,"fy":"FY2025-26","confidence":"HIGH","why_null":null,"checks":["identity OK: 10.00+325.66+3,037.16 = 3,372.82","PBT - tax = 222.13 OK"]},
+  {"position":2,"name":"South West Corporation","method":"UNIT_FACTOR","share_capital":0.01,"share_capital_formula":"0.85 (₹ lakh) ÷ 100 = 0.01","reserves_surplus":1.41,"reserves_surplus_formula":"141.02 (₹ lakh) ÷ 100 = 1.41","total_assets":7.32,"total_assets_formula":"731.50 (₹ lakh) ÷ 100 = 7.32","total_liabilities":5.90,"total_liabilities_formula":"589.62 (₹ lakh) ÷ 100 = 5.90","investments":null,"investments_formula":"'-' printed","turnover":12.89,"turnover_caption_used":"Turnover","turnover_formula":"1,288.56 (₹ lakh) ÷ 100 = 12.89","pbt":0.33,"pbt_formula":"32.79 (₹ lakh) ÷ 100 = 0.33","tax":0.06,"tax_formula":"5.78 (₹ lakh) ÷ 100 = 0.06","pat":0.27,"pat_formula":"27.01 (₹ lakh) ÷ 100 = 0.27","tnw":1.42,"fy":"FY2025-26 (reporting period differs per 'Yes', not stated)","confidence":"HIGH","why_null":null,"checks":["identity OK: 0.85+141.02+589.62 = 731.49 ≈ 731.50","PBT - tax = 27.01 OK"]},
+  {"position":3,"name":"Atlas Tints Inc.","method":"UNIT_FACTOR","share_capital":0.00,"share_capital_formula":"0.0009 (₹ lakh) ÷ 100 = 0.000009 → 0.00","reserves_surplus":0.13,"reserves_surplus_formula":"13.36 (₹ lakh) ÷ 100 = 0.13","total_assets":1.12,"total_assets_formula":"112.04 (₹ lakh) ÷ 100 = 1.12","total_liabilities":0.99,"total_liabilities_formula":"98.68 (₹ lakh) ÷ 100 = 0.99","investments":null,"investments_formula":"'-' printed","turnover":1.01,"turnover_caption_used":"Turnover","turnover_formula":"101.15 (₹ lakh) ÷ 100 = 1.01","pbt":-0.02,"pbt_formula":"-2.23 (₹ lakh) ÷ 100 = -0.02","tax":0.00,"tax_formula":"0.20 (₹ lakh) ÷ 100 = 0.002 → 0.00","pat":-0.02,"pat_formula":"-2.44 (₹ lakh) ÷ 100 = -0.02","tnw":0.13,"fy":"FY2025-26 (reporting period differs per 'Yes', not stated)","confidence":"HIGH","why_null":null,"checks":["identity OK: 0.0009+13.36+98.68 = 112.04","PBT - tax = -2.43 vs PAT -2.44 (rounding)"]}
+ ],
+ "restated_part_b": [],
+ "completion": {"part_a_count_printed":3,"part_a_rows_emitted":3,"part_b_rows_emitted":0,
+    "restated_rows_emitted":3,"format_class":"FORMAT_1","truncated":false,"pages_read":[1],
+    "sr_sequence_note":"no Sr column for subsidiaries (transposed; Sr. no. 1-14 index particulars). Neither filer name nor CIN printed on the carve page (input DEEPAK CHEMTEX LIMITED / L24110PN1997PLC211935 unverified; 'DCPL' subsidiary name is consistent). Part B and signature block not in carve.",
+    "model_used":"claude-opus-5-5","read_mode":"visual page read, Read tool"}
+}

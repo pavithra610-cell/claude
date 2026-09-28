@@ -1,0 +1,49 @@
+{
+ "filer": {"name_as_printed":"DEEP ENERGY RESOURCES LIMITED","cin_as_printed":null,"input_filer_name":"DEEP ENERGY RESOURCES LIMITED","input_cin":"L63090GJ1991PLC014833","fy_as_printed":"ANNUAL REPORT 2022-23; Reporting Period 31st March, 2023"},
+ "page_map": [
+  {"pdf_page":1,"printed_folio":"137","contains":"AOC 1 heading, Part A table (3 rows, printed rotated 90 degrees within the page), notes, auditor and board signature blocks","proof_first_line":"ANNUAL REPORT 2022-23 DEEP ENERGY RESOURCES LIMITED"}
+ ],
+ "ignored_non_aoc_content": [{"pdf_page":1,"what":"Auditor attestation block 'As per our report of even date attached Mahendra N. Shah & Co.' (context only)"}],
+ "statement_heading_verbatim": "AOC 1 Statement containing the salient features of the financial statements of Subsidiaries/Associates/Joint Ventures [Pursuant to first proviso to sub section (3) of section 129 read with rule 5 of Companies (accounts) Rules, 2014] Part A - Subsidiaries",
+ "layout": "HORIZONTAL",
+ "denomination": {"format_class":"FORMAT_1",
+    "s1_unit_lines_verbatim":["INR-Millions"], "s1_mid_table_stamps_verbatim":[], "s1_footer_lines_verbatim":[],
+    "statutory_caption_present":false, "inr_unit":"MILLION",
+    "foreign_unit":null, "s2_role":"NOTIONAL",
+    "s3_rate_block_verbatim":"Exchange Rate column: 1 / 1 / 82.2169", "rates_printed":"PER_ROW",
+    "evidence_one_line":"Spanning header 'INR-Millions' over all money columns; all three rows print Reporting Currency 'INR' (Deep Energy LLC with rate 82.2169 already in INR)."},
+ "part_a_roster": [
+  {"position":1,"sr_printed":"1","name":"Deep Natural Resources Limited"},
+  {"position":2,"sr_printed":"2","name":"Prabha energy Private Limited"},
+  {"position":3,"sr_printed":"3","name":"Deep Energy LLC"}
+ ],
+ "part_a_count_printed": 3,
+ "part_a_rows": [
+  {"Sr. No.":"1","Name of Subsidiary":"Deep Natural Resources Limited","The date since when subsidiary was acquired":"25/08/2009","Reporting Period":"31st March, 2023","Reporting Currency":"INR","Exchange Rate":"1","Share Capital":"18.00","Reserves & Surplus":"121.91","Total Assets":"267.88","Total Liabilities":"127.97","Investments other than Investment in subsidiaries":null,"Turnover & Other Income from operations*":"243.11","Profit/ [Loss] before Taxation*":"18.07","Provision for Taxation*":"4.02","Profit/ [Loss] after Taxation*":"14.05","Proposed Dividend":null,"% of Share-holding":"70%",
+   "canonical":{"A01":"1","A02":"Deep Natural Resources Limited","A03":"25/08/2009","A04":"31st March, 2023","A05":"INR 1","A06":"18.00","A07":"121.91","A08":"267.88","A09":"127.97","A10":null,"A11":"243.11","A12":"18.07","A13":"4.02","A14":"14.05","A15":null,"A16":"70%"},
+   "denomination_for_this_row":"INR MILLION","row_kind":"SINGLE","reporting_currency_raw":"INR","exchange_rate_raw":"1","footnote_marks":"* on turnover/PBT/tax/PAT headers (meaning not printed)","row_period_as_printed":"31st March, 2023","row_notes":"FY2022-23 vintage (carve labelled FY26)."},
+  {"Sr. No.":"2","Name of Subsidiary":"Prabha energy Private Limited","The date since when subsidiary was acquired":"24/08/2009","Reporting Period":"31st March, 2023","Reporting Currency":"INR","Exchange Rate":"1","Share Capital":"178.06","Reserves & Surplus":"5,409.82","Total Assets":"25,497.95","Total Liabilities":"19,910.07","Investments other than Investment in subsidiaries":null,"Turnover & Other Income from operations*":"1,640.97","Profit/ [Loss] before Taxation*":"9.62","Provision for Taxation*":null,"Profit/ [Loss] after Taxation*":"9.62","Proposed Dividend":null,"% of Share-holding":"53.16%",
+   "canonical":{"A01":"2","A02":"Prabha energy Private Limited","A03":"24/08/2009","A04":"31st March, 2023","A05":"INR 1","A06":"178.06","A07":"5,409.82","A08":"25,497.95","A09":"19,910.07","A10":null,"A11":"1,640.97","A12":"9.62","A13":null,"A14":"9.62","A15":null,"A16":"53.16%"},
+   "denomination_for_this_row":"INR MILLION","row_kind":"SINGLE","reporting_currency_raw":"INR","exchange_rate_raw":"1","footnote_marks":"*","row_period_as_printed":"31st March, 2023","row_notes":"FY2022-23 vintage."},
+  {"Sr. No.":"3","Name of Subsidiary":"Deep Energy LLC","The date since when subsidiary was acquired":"02/04/2008","Reporting Period":"31st March, 2023","Reporting Currency":"INR","Exchange Rate":"82.2169","Share Capital":"27.13","Reserves & Surplus":"-5.76","Total Assets":"27.13","Total Liabilities":null,"Investments other than Investment in subsidiaries":null,"Turnover & Other Income from operations*":null,"Profit/ [Loss] before Taxation*":null,"Provision for Taxation*":null,"Profit/ [Loss] after Taxation*":null,"Proposed Dividend":null,"% of Share-holding":"91.52%",
+   "canonical":{"A01":"3","A02":"Deep Energy LLC","A03":"02/04/2008","A04":"31st March, 2023","A05":"INR 82.2169","A06":"27.13","A07":"-5.76","A08":"27.13","A09":null,"A10":null,"A11":null,"A12":null,"A13":null,"A14":null,"A15":null,"A16":"91.52%","X_country":"likely USA (LLC; rate 82.2169 = USD/INR)"},
+   "denomination_for_this_row":"INR MILLION","row_kind":"SINGLE","reporting_currency_raw":"INR","exchange_rate_raw":"82.2169","footnote_marks":"*","row_period_as_printed":"31st March, 2023","row_notes":"Foreign LLC printed with reporting currency 'INR' and rate 82.2169; rate descriptive under FORMAT_1. FY2022-23 vintage."}
+ ],
+ "part_a_rows_emitted": 3, "part_a_roster_vs_rows_match": true, "truncated_after": null,
+ "part_b": {"status":"NIL_AS_PRINTED","verbatim":"3. The Company does not have any associate and joint venture copany as on 31st March, 2023.","rows":[]},
+ "notes": {"footnotes_verbatim":["* on column headers Turnover & Other Income from operations*, Profit/[Loss] before Taxation*, Provision for Taxation*, Profit/[Loss] after Taxation* — no explanation printed"],
+   "yet_to_commence_names":[],
+   "liquidated_sold_merged_ceased_names":[],
+   "other_notes_verbatim":["Notes: The following information shall be furnished at the end of the statement:","1. Names of subsidiaries which are yet to commence operations: NIL","2. Names of subsidiaries which have been liquidated or sold during the year - NIL","3. The Company does not have any associate and joint venture copany as on 31st March, 2023."],
+   "signature_block":{"date":"29/05/2023","place":"Ahmedabad","signatories_count":4}},
+ "restated_inr_crore": [
+  {"position":1,"name":"Deep Natural Resources Limited","method":"UNIT_FACTOR","share_capital":1.80,"share_capital_formula":"18.00 (₹ Mn) ÷ 10 = 1.80","reserves_surplus":12.19,"reserves_surplus_formula":"121.91 (₹ Mn) ÷ 10 = 12.19","total_assets":26.79,"total_assets_formula":"267.88 (₹ Mn) ÷ 10 = 26.79","total_liabilities":12.80,"total_liabilities_formula":"127.97 (₹ Mn) ÷ 10 = 12.80","investments":null,"investments_formula":"'-' printed","turnover":24.31,"turnover_caption_used":"Turnover & Other Income from operations*","turnover_formula":"243.11 (₹ Mn) ÷ 10 = 24.31","pbt":1.81,"pbt_formula":"18.07 (₹ Mn) ÷ 10 = 1.81","tax":0.40,"tax_formula":"4.02 (₹ Mn) ÷ 10 = 0.40","pat":1.41,"pat_formula":"14.05 (₹ Mn) ÷ 10 = 1.41","tnw":13.99,"fy":"FY2022-23","confidence":"HIGH","why_null":null,"checks":["identity OK: 18.00+121.91+127.97 = 267.88","PBT - tax = 14.05 OK"]},
+  {"position":2,"name":"Prabha energy Private Limited","method":"UNIT_FACTOR","share_capital":17.81,"share_capital_formula":"178.06 (₹ Mn) ÷ 10 = 17.81","reserves_surplus":540.98,"reserves_surplus_formula":"5,409.82 (₹ Mn) ÷ 10 = 540.98","total_assets":2549.80,"total_assets_formula":"25,497.95 (₹ Mn) ÷ 10 = 2,549.80","total_liabilities":1991.01,"total_liabilities_formula":"19,910.07 (₹ Mn) ÷ 10 = 1,991.01","investments":null,"investments_formula":"'-' printed","turnover":164.10,"turnover_caption_used":"Turnover & Other Income from operations*","turnover_formula":"1,640.97 (₹ Mn) ÷ 10 = 164.10","pbt":0.96,"pbt_formula":"9.62 (₹ Mn) ÷ 10 = 0.96","tax":null,"tax_formula":"'-' printed","pat":0.96,"pat_formula":"9.62 (₹ Mn) ÷ 10 = 0.96","tnw":558.79,"fy":"FY2022-23","confidence":"HIGH","why_null":null,"checks":["identity OK: 178.06+5,409.82+19,910.07 = 25,497.95"]},
+  {"position":3,"name":"Deep Energy LLC","method":"UNIT_FACTOR","share_capital":2.71,"share_capital_formula":"27.13 (₹ Mn) ÷ 10 = 2.71","reserves_surplus":-0.58,"reserves_surplus_formula":"-5.76 (₹ Mn) ÷ 10 = -0.58","total_assets":2.71,"total_assets_formula":"27.13 (₹ Mn) ÷ 10 = 2.71","total_liabilities":null,"total_liabilities_formula":"'-' printed","investments":null,"investments_formula":"'-' printed","turnover":null,"turnover_caption_used":"Turnover & Other Income from operations*","turnover_formula":"'-' printed","pbt":null,"pbt_formula":"'-' printed","tax":null,"tax_formula":"'-' printed","pat":null,"pat_formula":"'-' printed","tnw":2.14,"fy":"FY2022-23","confidence":"HIGH","why_null":null,"checks":["IDENTITY_FAIL: SC+R = 21.37 vs TA 27.13 with liabilities '-' (implied liabilities 5.76; TA equals share capital)"]}
+ ],
+ "restated_part_b": [],
+ "completion": {"part_a_count_printed":3,"part_a_rows_emitted":3,"part_b_rows_emitted":0,
+    "restated_rows_emitted":3,"format_class":"FORMAT_1","truncated":false,"pages_read":[1],
+    "sr_sequence_note":"continuous 1..3. Printed filer name matches input; CIN not printed on page (input CIN unverified). VINTAGE MISMATCH: page is ANNUAL REPORT 2022-23 (period 31st March 2023, signed 29/05/2023), not FY26 as carve filename claims.",
+    "model_used":"claude-opus-5-5","read_mode":"visual page read, Read tool"}
+}
