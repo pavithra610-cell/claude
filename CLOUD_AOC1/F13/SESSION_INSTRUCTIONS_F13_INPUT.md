@@ -9,4 +9,5 @@ TOKEN DISCIPLINE — these carves are tiny; do not explore:
 3. If part_a_rows_emitted < expected_part_a_rows, re-check the pages (spreads, transposed columns, continuation pages) before finishing; a real difference is recorded, never padded.
 4. No prose between carves; the sub-agent's final message = one line per carve: cin | filer | part_a_count_printed | rows_emitted | format_class | truncated.
 5. Main session, after all sub-agents finish: git add CLOUD_AOC1/F13/*_OUTPUT.json ; git commit -m "AOC1 F13 outputs" ; git push origin aoc1/F13. One commit. Stop.
-6. Never edit the PDFs, the prompt or the TSV. null / NOT_FOUND where the page prints nothing; nothing invented.
+6. MODEL: this session and every sub-agent run on Fable (claude-fable-5-1). Each JSON must add "completion.model_used": the exact model id you are running as, and "completion.read_mode": "visual page read, Read tool". A JSON without model_used is rejected.
+7. Never edit the PDFs, the prompt or the TSV. null / NOT_FOUND where the page prints nothing; nothing invented.
