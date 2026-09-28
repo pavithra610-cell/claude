@@ -1,0 +1,307 @@
+FORM AOC-1 — FULL TRANSCRIPTION AND ₹-CRORE RESTATEMENT OF ONE INDIAN FILER'S STATEMENT OF SUBSIDIARIES, ASSOCIATES AND JOINT VENTURES
+
+You are given a PDF carve from an Indian company's annual report or MCA filing that contains the
+company's Form AOC-1 (Companies Act 2013, s.129(3), Companies (Accounts) Rules 2014 r.5): the
+statement of salient features of the financial statements of its subsidiaries (Part A) and of its
+associate companies and joint ventures (Part B). Your task has two parts, kept strictly separate:
+
+  PART 1 — RECORD: transcribe every row of Part A and Part B exactly as printed, every printed
+           column, every note, with the denomination evidence that governs each row. No arithmetic,
+           no conversion, no re-scaling in Part 1. Brackets stay brackets, dashes become null,
+           digits keep their printed grouping.
+  PART 2 — RESTATE: for every row, restate the key money fields in ₹ crore using ONLY what Part 1
+           recorded, writing the exact arithmetic beside each number so a human can check it.
+
+Everything below is the accumulated knowledge of how Indian filers print this form, how the page
+misleads a careful reader, and how the two parts must be kept apart. Read it all before the PDF.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════
+1. WHAT THE FORM IS — STATUTORY LINES, TITLES, LAYOUTS, SCOPE
+═══════════════════════════════════════════════════════════════════════════════════════════════
+
+1.1 STATUTORY PART A LINES (16 particulars; filers reword them — map every printed header to one):
+  A01 Sl. No.
+  A02 Name of the subsidiary
+  A03 Date since when subsidiary was acquired / date of incorporation
+  A04 Reporting period for the subsidiary, if different from the holding company's
+  A05 Reporting currency and exchange rate as on the last date of the relevant financial year
+      (foreign subsidiaries) — some filers print TWO rates: closing (balance sheet) and average (P&L)
+  A06 Share capital
+  A07 Reserves & surplus ("Reserves and Surplus", "Other equity")
+  A08 Total assets
+  A09 Total liabilities (many filers print this GROSS = equal to total assets, i.e. including equity;
+      others print external liabilities only — both conventions are normal)
+  A10 Investments ("Investments other than in subsidiaries")
+  A11 Turnover ("Total income", "Revenue from operations", "Revenue", "Gross turnover")
+  A12 Profit before taxation ("Profit/(Loss) before tax")
+  A13 Provision for taxation ("Tax expense", "Current + deferred tax")
+  A14 Profit after taxation
+  A15 Proposed dividend ("Proposed dividend / earnings transfer to owners")
+  A16 Extent of shareholding (%) ("% of shareholding", "% holding")
+  Common extra columns (keep, key X_): Country; CIN/registration no.; Relationship / s.2(87) basis;
+  Instruments entirely equity in nature; Share application money; OCI; Total comprehensive income;
+  Voting power %; Financial year end; Notes.
+1.2 STATUTORY PART B LINES (associates and joint ventures):
+  B01 Name of associate / joint venture
+  B02 Latest audited balance sheet date
+  B03 Date on which the associate / JV was associated or acquired
+  B04 Shares held by the company on the year end: B04a Number · B04b Amount of investment · B04c Extent of holding %
+  B05 Description of how there is significant influence
+  B06 Reason why the associate / JV is not consolidated
+  B07 Networth attributable to shareholding as per latest audited balance sheet
+  B08 Profit / loss for the year: B08a Considered in consolidation · B08b Not considered in consolidation
+  Part B notes: names yet to commence operations; names liquidated or sold during the year.
+1.3 THE TITLE IS NOT THE TEST. Filers call it "Form AOC-1", "FORM NO. AOC-1", "AOC-I", "AOC 1",
+  "Annexure-A/B/VI", "Statement pursuant to Section 129(3)", "Salient Features of Financial
+  Statements of Subsidiaries", or give it no heading (Borosil Renewables prints "A. Salient Features
+  of Financial Statements of Subsidiaries" with no "AOC" string anywhere). The statement is THE TABLE
+  OF NAMED SUBSIDIARIES WITH FINANCIAL FIGURES. Content decides.
+1.4 LOOK-ALIKES THAT ARE NOT THE FORM (record their presence in ignored_non_aoc_content, never
+  transcribe them as Part A/B): the Schedule III "share of each entity in consolidated net assets /
+  profit / OCI / TCI" table (% columns, amounts are group-consolidation shares — Reliance prints it
+  beside the AOC-1; HCL prints it on the facing page); Form AOC-2 (related-party contracts);
+  related-party (Ind AS 24) note; Ind AS 112 summarised financials; instrument-wise investment
+  schedules (shares / MF / CCPS / CCD / NCD lists with quantities and face values); CSR annexure;
+  Section 186 loans-guarantees annexure; MGT-9 / MGT-7 extracts; NCI note; auditor "Other Matter"
+  paragraph. Only the single "Investments" column of Part A and B04b of Part B are AOC investment fields.
+1.5 LAYOUTS: HORIZONTAL (one row per subsidiary, particulars as columns); TRANSPOSED / VERTICAL
+  (one COLUMN per subsidiary, particulars down the left, a constant Sl. No. 1–16 that indexes the
+  PARTICULARS, not the subsidiaries — Persistent, GMM Pfaudler, Greenlam, PPL Pharma, Elgi);
+  ONE PAGE PER SUBSIDIARY (small filers' template forms). Sequences may RESTART (Uflex prints two
+  groups each from Sr.1) or CONTINUE from a higher number; Sr. numbers may be absent altogether.
+  Part B is sometimes printed as named columns rather than numbered rows.
+1.6 HEADER SCOPE DECIDES WHETHER PART B EXISTS. Read the statement's own heading verbatim:
+  (a) "...of subsidiaries / associate companies / joint ventures" → Part B is expected; if absent,
+      record part_b.status = MISSING_EXPECTED.
+  (b) "...of subsidiaries" only (Symega, CEAT, Persistent, LTTS, Quess, HCL) → the form is scoped to
+      subsidiaries by design → part_b.status = NOT_IN_SCOPE_OF_HEADER. Nothing is missing.
+  (c) Part B printed with "Nil", "Not applicable", or the title struck through → NIL_AS_PRINTED, quote it.
+  (d) Part B printed with rows → transcribe.
+1.7 CONTROL, NOT EQUITY %, DECIDES A vs B: a 49%-equity / 51%-voting entity is a subsidiary (Prime
+  Pharma SPA Algeria); 45.95% equity / 50% voting is an associate. Record voting % where printed;
+  never re-classify a row — record it in the Part the filer put it in and note any voting column.
+1.8 ANNEXURES ARE NOT BOUND IN LETTER ORDER (Madurai Power: B, C, then A which is the AOC-1). Two-up
+  spread pages carry two printed pages on one PDF page, sometimes rotated 90°, sometimes with the
+  AOC-1 half beside an unrelated annexure (CSR, AOC-2, another entity's balance sheet). Transcribe
+  only the AOC-1 half; list the other half in ignored_non_aoc_content. A lead page before the
+  heading (notes, board report, auditor sign-off) is context only.
+1.9 PER-ROW VINTAGE. A table is not automatically current-year: MMTC's FY2024-25 table carries a
+  subsidiary at FY2022-23 ("FS not received"), JVs at FY2024-25, FY2020-21 and FY2016-17. Record
+  A04 / B02 / any "period" cell per row exactly; stub periods (18-Oct-2024 to 31-Mar-2025) are
+  recorded as printed, never annualised.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════
+2. DENOMINATION — THE THREE STRATA, THE THREE FORMATS, AND WHERE THE UNIT HIDES
+═══════════════════════════════════════════════════════════════════════════════════════════════
+
+2.1 THREE STRATA, recorded separately, never merged:
+  S1 UNIT MENTIONS THAT BIND VALUES: any scale word (crore/lakh/million/thousand), currency word or
+     symbol, or figure embedded in headers, second header lines ("Foreign currencies in Million"),
+     except-clauses ("All figures except exchange rates are in Crores" — Marico), footers, column
+     titles, name cells, or a dedicated unit row INSIDE the table body (McLeod Russel: each of four
+     subsidiary columns stamps "` in Lakhs" mid-table while the page header lost the ₹ glyph;
+     Alps Industries row 2, CL Educate row 3, Roto row 2, Medicamen / Khadim per-column titles).
+  S2 THE REPORTING-CURRENCY COLUMN — a SELECTOR: tells which S1 rule governs each row and, in
+     twin-row layouts, which twin is native and which is INR. It is not itself a denomination.
+  S3 THE EXCHANGE-RATE COLUMN / BLOCK — REFERENCE: the historical conversion price. Recorded
+     verbatim, never applied in Part 1; applied in Part 2 only where §2.3 says values are native.
+2.2 THREE FORMATS (state one per table, with the evidence lines verbatim):
+  FORMAT_1 — one INR unit governs every value; the currency and rate columns are notional. About
+     three quarters of all statements. Canon: Tata Steel "(₹ crore)" — "105 Tata Steel UK Limited
+     GBP 110.47 35,450.10 …" means share capital ₹35,450.10 crore, not £35,450. Also: Indian Oil
+     (₹ crore, closing + average rates listed = already translated); Dion (₹ lakh, two rates).
+  FORMAT_2 — dual: an INR unit for Indian rows and a foreign-currency unit (usually Million) for
+     foreign rows, selected by S2; OR each foreign subsidiary printed twice (native row + INR row);
+     OR native and INR COLUMNS side by side. Canon: Reliance Industries — header "(₹ in crore)" plus
+     "Foreign Currencies in Million"; foreign subs starred, "10 Addverb Technologies USA Inc. * USD
+     7.00 (4.78) 9.83" = USD 7.00 million share capital; rate block below the table "1 USD=85.475,
+     1 GBP=110.7025 … 100 JPY=56.7575". Hindalco: every foreign sub as an INR-crore row + FC-million
+     row. UltraTech: FOUR rows per subsidiary (CY native, CY ₹, PY native, PY ₹), "(Amount in
+     crores)" binding only the ₹ rows. Jubilant Ingrevia: native-ABSOLUTE row with no label followed
+     by an UNNAMED ₹-million row — the name flows down, the unnamed row is the INR twin. Symega:
+     USD column with closing 85.45 and average 83.68 beside an INR column. Marico: single scale
+     (crore) but currency varies by row (BDT-crore twin beside INR-crore twin).
+  FORMAT_3 — per-cell / per-column units, or no unit printed anywhere, or conflicting signals.
+     RN Chidakashi (transposed): row 3 reads column by column "US Dollars (In Millions)" / "UK
+     Pounds" / "Rupees (In Lakhs)" / "US Dollars" — four units in one table. U K Paints (Berger,
+     scanned): unit inside the NAME cell — "(Fig in Thousands)", "(Fig in Lakhs)", "(Fig in USD)",
+     "(Fig in Crores)", "(Fig in GBP)" — five units. Zoho: "amounts in Lakhs" header + per-row
+     currency and rate columns, native-lakh × rate, with individual share-capital cells absolute and
+     one row stamped "INR in Thousands". eMudhra: two domestic columns ₹-million, six foreign
+     columns native-absolute with per-column rates, one IDR column in millions. Hero Motors: ₹-abs
+     domestic, GBP native ×1e5, THB native — three bases. QBurst: CY column ₹-million, PY column
+     ₹-lakh in the same table.
+2.3 THE #1 TRAP — THE STATUTORY CAPTION IS NOT THE UNIT. "(Information in respect of each
+  subsidiary to be presented with amounts in Rs.)" / "…in ₹" / "…in INR" / "Amounts in Rs." is the
+  form's own instruction, printed on every AOC-1. A scale word ANYWHERE in header, parenthetical,
+  footer or table body overrides it: NMDC (real = crore), Transpek (lakhs), Windlas (millions),
+  Supreme Nonwoven (lakhs), Zenex (millions), Rayzon (million), Narmada Bio-Chem (lakhs), Promac
+  (lakhs), Meril (lakhs), Sanathan ("(in Lakhs)" beats a prose "rupees one thousand crores"), Surya
+  Roshni (header "in lakhs" governs the rows; footer "in crore" covers only the FC conversion note),
+  HMA Agro ("(in millions)" vs "(* in '000)" — the one sitting in the sub-table header governs).
+  ABSOLUTE rupees only when NO scale word appears anywhere — the signal is large full-digit numbers
+  in Indian grouping (1,42,63,588). Small-filer template forms with only the boilerplate caption are
+  decided per filer by magnitude: Freight Consolidators — a GmbH share capital "2,75,000" cannot be
+  ₹2.75 lakh (German minimum €25,000; €275k classic) → native × printed rate; Covalense — same
+  template, ₹-absolute (a native reading gave ~₹1,300 crore for a small group; ₹-abs fits ~₹84 crore).
+  When the share-capital norm and the turnover-size test disagree, turnover size wins.
+2.4 WHERE THE UNIT PRINTS (verbatim strings seen): (₹ in crore) · (₹ in crores) · (` in crore) ·
+  ` (Crore) · (Rs. in Lakhs) · (Rs in Lakhs) · Rs. In lakhs · (*Lakhs) · * in Lacs · (₹in lakhs) ·
+  (Amount in Lakhs) · (INR Mn) · (INR in crore) · (in INR million) · (Rs. in million) · (C in
+  million) · (in ` millions) · (in ` '000) · In Crores) · Amount in ` Crore · "Unless otherwise
+  specified, all monetary values are in Lakhs of INR" · "All amounts are in ₹ Million, unless
+  otherwise stated" · "…amount in ₹ in Lakhs" (carries a scale) · footer "Foreign Currencies in
+  Million" · "Indian rupee equivalents of the figures given in foreign currencies…" · "*Converted
+  using closing exchange rate; # Converted using average exchange rate" · "The Foreign Currency
+  Figures have been converted into Indian Rupees using [rate]".
+2.5 THE RUPEE GLYPH IS AN OPEN LIST. Font substitution renders ₹ as ` (backtick), C, H, I, J, K, *,
+  2, ~ — differently within one document by font run (Tata Chemicals, Bharti Airtel, Tata Comm,
+  Apollo Tyres, Star). "C in million" = ₹ in million; "all amounts in 2 crores" = ₹ crores; a double
+  space in "amounts in  Lakhs" is a dropped glyph, not an absent unit. Any implausible single
+  character where a currency symbol belongs is the rupee sign. Variants: Lakh/Lakhs/Lacs/Lac;
+  Crore/Crores/Cr.; Million/Millions/Mn.
+2.6 TWO-RATE SIGNATURE. A table printing BOTH "Exchange rate (P&L average)" AND "Exchange rate
+  (BS closing)" has ALREADY translated to INR at the header scale (BS at closing, P&L at average per
+  Ind AS 21) — the rates are descriptive. A NATIVE table prints ONE closing rate "as on the last
+  date of the financial year" for the reader to apply. Record both rates whenever printed and state
+  which column the figures come from.
+2.7 A CAPTION MAY BELONG TO THE NEIGHBOURING TABLE (Kalyan Jewellers: a "₹ in million" line on the
+  page belonged to another table; the AOC-1 was ₹-absolute). Bind a caption only to the table it
+  heads. A per-column unit note may be bogus (Grasim: a ×0.1 column note against ₹-crore columns).
+2.8 BRACKETS AND ANNOTATIONS. Round brackets = negative. Square brackets carry two meanings on the
+  same page (Dorf-Ketal): on foreign rows [₹ x] is the rupee equivalent of the native figure beside
+  it; on Indian rows [x] is negative — decided by whether a ₹ symbol sits inside. "[Refer Note]" or
+  "*" in a cell displaces the value (Lupin) — record the annotation, do not slide neighbours.
+  "#REF!" printed in a cell (Neeyamo) is null. A rate cell printing "0.00" (Dabur PARS Iran, CCL
+  Vietnam) is a placeholder, not a rate. Mixed digit grouping in one number ("1,917,13,965.17") is
+  read by magnitude against its row; note it.
+2.9 DUPLICATE NAMES ARE REAL (Black Box: "AGC Networks LLC" ×3 and a duplicated Sr.70; Adani Green:
+  two pairs with different figures; Alkem; Thomas Cook). Record every printed row; never merge.
+2.10 SIZE PRIOR — for stating a doubt, never for deciding a value: entity-formation capital norms
+  (GmbH ≥ €25,000; US par $1,000–5,000; DMCC AED 50,000; Pte SGD 1–100,000); a subsidiary's turnover
+  above 1.5× the parent's consolidated revenue is implausible EXCEPT for agency/aggregator groups
+  that bill gross while the parent books net commission (EaseMyTrip: YoloBus ₹674 crore gross GMV);
+  a holding company's own turnover is tiny while the group under it is large (scope, not unit).
+  Where headers are silent, list the candidate readings {INR@scale, native@scale, native-absolute}
+  and say which the magnitudes support — as a note, with FORMAT_3 and null in Part 2.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════
+3. PART 1 — TRANSCRIPTION RULES
+═══════════════════════════════════════════════════════════════════════════════════════════════
+
+3.1 PAGE MAP FIRST. For each carve page: what it carries (heading, Part A rows range, Part B,
+  notes/signatures, non-AOC content), PDF page and printed folio, and the first line as proof.
+  Record the filer name and CIN as printed on the page (folder names are claims; the page is proof).
+3.2 DENOMINATION LOCK SECOND (before any row): S1 lines verbatim (header, mid-table, footer),
+  S2 role, S3 block verbatim, format class, INR unit, foreign unit, one line of evidence.
+3.3 ROSTER THIRD: every subsidiary name in printed order with its printed Sr. (or position if no
+  Sr.), and the printed count. The roster anchors everything that follows.
+3.4 ROWS — THREE LAYERS PER SUBSIDIARY OBJECT, every row, in printed order:
+  (i)  the printed headers as keys, values exactly as printed (Indian grouping kept, brackets kept,
+       "-" / "–" / blank → null, "Nil" → "Nil"); two-line headers joined with a space; CY/PY twins
+       suffixed with the printed period; in TRANSPOSED layout the particulars column supplies the keys
+       and each subsidiary column becomes one object;
+  (ii) "canonical": all sixteen A-codes present on every row (null where the filer did not print
+       that line), same printed strings re-keyed; extra columns under X_ keys;
+  (iii) "denomination_for_this_row": the unit and currency governing THIS row's figures, e.g.
+       "INR CRORE" / "USD MILLION" / "INR LAKH" / "EUR ABSOLUTE" / "UNRESOLVED", from §2 plus any
+       per-row stamp; "row_kind": SINGLE / NATIVE / INR_EQUIVALENT / CY / PY; "reporting_currency_raw",
+       "exchange_rate_raw" (closing and average if both), "footnote_marks", "row_period_as_printed",
+       "row_notes" (annotations, [Refer Note], #REF!, 0.00 rate, duplicate-name flag, voting %).
+  Column position comes from the printed grid, never from reading order: a truly blank cell keeps
+  its column (Thomas Cook: blank cells shift every later value left in text order). A value that
+  would make a row "balance" but is not printed is not written (Wipro row 142).
+3.5 EVERY ROW, EVERY TIME. 308 subsidiaries = 308 objects (Motherson); 272 (Reliance); 149 (M&M);
+  148 (Wipro); 141 (Tech Mahindra). Continue across pages, spreads and rotations. If output must
+  end early, end after a complete object and write "truncated_after": the last name — the roster
+  already carries the full list. After the last row: "part_a_rows_emitted" and
+  "part_a_roster_vs_rows_match".
+3.6 PART B under the same three layers with B-codes; status per §1.6; Part B printed as columns is
+  transcribed column by column.
+3.7 NOTES VERBATIM: every footnote symbol and its meaning; yet-to-commence list; liquidated / sold /
+  merged / ceased list (with the filer's own markers, e.g. "* amalgamated with…", "^ liquidated");
+  "no subsidiary was liquidated…" sentences; signature block date, place, signatory count.
+3.8 SCOPE LINE. The task message may restrict the range: "SCOPE: subsidiary rows at roster
+  positions 1–150 (= printed Sr 1–150 where printed) …" or "…from roster position 151 to the end,
+  then Part B, notes, Part 2 for those rows, completion". Page map, denomination lock and the FULL
+  roster are output in every request regardless; row objects and Part 2 objects only for the
+  positions named. Without a SCOPE line, transcribe everything.
+
+═══════════════════════════════════════════════════════════════════════════════════════════════
+4. PART 2 — ₹-CRORE RESTATEMENT (the only place arithmetic is allowed)
+═══════════════════════════════════════════════════════════════════════════════════════════════
+
+4.1 ONE TRANSFORMATION PER ROW. Each printed value reaches ₹ crore by exactly one transformation,
+  determined by the row's denomination_for_this_row. Serving errors are never random — they are a
+  DOUBLE conversion (a rate or scale applied to a value the filer already converted) or a PHANTOM
+  conversion (a transformation the page does not print). Never stack: rate × scale is legal only
+  when the page prints native values AND a scale for those native values.
+4.2 UNIT FACTORS TO CRORE: crore ×1 · lakh ÷100 · million ÷10 · thousand ÷1,00,000 · absolute
+  ÷1,00,00,000.
+4.3 BY FORMAT:
+  FORMAT_1 → value × unit factor. No exchange rate (the rate is descriptive). A two-rate table is
+  FORMAT_1 by definition (§2.6).
+  FORMAT_2 twin rows / twin columns → the INR member IS the restated value ("method": PRINTED_INR);
+  the native member is evidence and is never converted.
+  FORMAT_2 single native row (Reliance foreign rows) → value × foreign unit factor × printed rate
+  (₹ per unit; a "100 JPY = 56.7575" rate is ÷100 first). Use the closing rate for balance-sheet
+  lines (A06–A10) and the average rate for P&L lines (A11–A15) only when BOTH are printed AND the
+  table is native; otherwise the one printed rate.
+  FORMAT_3 → per row by its own stamp; a row whose unit or rate is not printed → null with
+  "why_null": NO_PRINTED_RATE / UNIT_UNRESOLVED / RATE_ZERO_PLACEHOLDER / VALUE_ANNOTATED.
+  Never take a rate from another filer, another year, or general knowledge.
+4.4 FIELDS RESTATED per row: share_capital, reserves_surplus, total_assets, total_liabilities,
+  investments, turnover (with "turnover_caption_used"), pbt, tax, pat, tnw = share_capital +
+  reserves_surplus from the two restated values (null if either is null); Part B: investment amount,
+  networth attributable, profit considered / not considered. Each carries a "formula" string, e.g.
+  "2,135.1 (NGN Mn) × 0.0557547 ₹/NGN ÷ 10 = 11.90" or "35,450.10 (₹ cr) × 1 = 35,450.10". Two
+  decimals; negatives stay negative; per-row FY carried over.
+4.5 VERIFICATION, NOT PLACEMENT. After restating a row, test (a) SC + reserves + liabilities ≈
+  assets under BOTH conventions (external liabilities; or gross liabilities = assets), (b) PBT − tax ≈
+  PAT, (c) turnover vs total assets and vs the size prior (§2.10). A failed test is written into
+  "checks" as a flag (IDENTITY_FAIL / SIGN_SUSPECT / MAGNITUDE_IMPLAUSIBLE / DOUBLE_CONVERSION_RISK /
+  SCALE_SIGNATURE_×10|×100|×1000|×1e5|×1e7 / RATE_SIGNATURE) with the ratio observed. Flags never
+  change a Part 1 value and never choose a Part 2 method — they only make the doubt visible.
+4.6 CONFIDENCE per row: HIGH (FORMAT_1, or a printed INR twin), MEDIUM (native × a printed rate),
+  LOW (FORMAT_3 resolved by a per-row stamp), NULL (no lock — the value is left null, never estimated).
+
+═══════════════════════════════════════════════════════════════════════════════════════════════
+5. OUTPUT — ONE JSON OBJECT, THESE KEYS IN THIS ORDER, NO PROSE, NO FENCES
+═══════════════════════════════════════════════════════════════════════════════════════════════
+{
+ "filer": {"name_as_printed":"..","cin_as_printed":"..|null","fy_as_printed":".."},
+ "page_map": [{"pdf_page":n,"printed_folio":"..","contains":"..","proof_first_line":".."}],
+ "ignored_non_aoc_content": [{"pdf_page":n,"what":".."}],
+ "statement_heading_verbatim": "..",
+ "layout": "HORIZONTAL|TRANSPOSED|ONE_PAGE_PER_SUB|MIXED",
+ "denomination": {"format_class":"FORMAT_1|FORMAT_2|FORMAT_3",
+    "s1_unit_lines_verbatim":[..], "s1_mid_table_stamps_verbatim":[..], "s1_footer_lines_verbatim":[..],
+    "statutory_caption_present":true|false, "inr_unit":"CRORE|LAKH|MILLION|THOUSAND|ABSOLUTE|null",
+    "foreign_unit":"MILLION|THOUSAND|ABSOLUTE|null", "s2_role":"NOTIONAL|SELECTOR|CARRIES_UNIT",
+    "s3_rate_block_verbatim":"..", "rates_printed":"NONE|CLOSING|CLOSING_AND_AVERAGE|PER_ROW",
+    "evidence_one_line":".."},
+ "part_a_roster": [{"position":n,"sr_printed":"..|null","name":".."}],
+ "part_a_count_printed": n,
+ "part_a_rows": [ {printed headers as keys ..., "canonical":{"A01":..,"A02":..,...,"A16":..,"X_country":..},
+    "denomination_for_this_row":"..","row_kind":"..","reporting_currency_raw":"..","exchange_rate_raw":"..",
+    "footnote_marks":"..","row_period_as_printed":"..","row_notes":".."} ],
+ "part_a_rows_emitted": n, "part_a_roster_vs_rows_match": true|false, "truncated_after": null|"..",
+ "part_b": {"status":"ROWS|NOT_IN_SCOPE_OF_HEADER|NIL_AS_PRINTED|MISSING_EXPECTED","verbatim":"..",
+    "rows":[{printed headers as keys ..., "canonical":{"B01":..,...,"B08b":..}, "relation_as_printed":"..",
+    "denomination_for_this_row":"..","row_notes":".."}]},
+ "notes": {"footnotes_verbatim":[..],"yet_to_commence_names":[..],"liquidated_sold_merged_ceased_names":[..],
+    "other_notes_verbatim":[..],"signature_block":{"date":"..","place":"..","signatories_count":n}},
+ "restated_inr_crore": [ {"position":n,"name":"..","method":"UNIT_FACTOR|PRINTED_INR|NATIVE_X_RATE|NULL",
+    "share_capital":x,"share_capital_formula":"..","reserves_surplus":x,"reserves_surplus_formula":"..",
+    "total_assets":x,"total_assets_formula":"..","total_liabilities":x,"total_liabilities_formula":"..",
+    "investments":x,"investments_formula":"..","turnover":x,"turnover_caption_used":"..","turnover_formula":"..",
+    "pbt":x,"pbt_formula":"..","tax":x,"tax_formula":"..","pat":x,"pat_formula":"..","tnw":x,
+    "fy":"..","confidence":"HIGH|MEDIUM|LOW|NULL","why_null":null|"..","checks":[..]} ],
+ "restated_part_b": [ {"name":"..","investment_amount":x,"networth_attributable":x,"profit_considered":x,
+    "profit_not_considered":x,"formula":"..","confidence":".."} ],
+ "completion": {"part_a_count_printed":n,"part_a_rows_emitted":n,"part_b_rows_emitted":n,
+    "restated_rows_emitted":n,"format_class":"..","truncated":false|true,"pages_read":[..],
+    "sr_sequence_note":"continuous 1..N | gaps at [..] | restarts at [..] | no Sr column"}
+}
+null and NOT_FOUND are correct answers wherever the page does not print a value. Nothing is written
+that the page does not show.
