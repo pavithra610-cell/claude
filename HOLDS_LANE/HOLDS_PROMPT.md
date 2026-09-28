@@ -10,3 +10,5 @@ Output: append to HOLDS_LANE/HOLDS_EVIDENCE_OUTPUT.csv after EVERY hold (checkpo
 HOLD_ID,MEMBER_CIN,URL,PAGE_DATE_OR_ASOF,QUOTE,FACT_TYPE(OWNER|SALE|MERGER|STRIKEOFF|JV|RENAME|NONE),OWNER_NAME_AS_STATED,PCT_IF_STATED,YOUR_READING(one line)
 Commit and push to branch holds/<your-session-name> after every 10 holds: git add HOLDS_LANE && git commit -m "holds evidence <n>" && git push.
 Start with HOLD_ID H001. Report at the end: holds done, pages opened, holds with NONE.
+
+IDENTITY RULE (no token matching): identify every company by its exact CIN, never by partial or similar name tokens. A page counts as evidence only if it shows the exact MEMBER_CIN, or the exact full registered MEMBER name (every word, same order; ignore only case, punctuation, PVT/PRIVATE and LTD/LIMITED). Shared words, a common group surname or a look-alike name (e.g. "Jankalyan Vinimay" for "Jaltarang Vinimay") do not count. Press or rating pages without a CIN need the exact full name; a short or brand name is not enough. Start YOUR_READING with "ID: CIN on page" or "ID: exact name on page"; rows without it are rejected.
