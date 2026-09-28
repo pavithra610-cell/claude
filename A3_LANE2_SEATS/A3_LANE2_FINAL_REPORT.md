@@ -61,7 +61,7 @@ Rule: LABEL_HOUSE contradicted by CONFIRM_REGISTER/OTHER_HOUSE; REGISTER_HOUSE b
 | 11 | U32111GJ2012PTC122338 | Inddusinc Exim Private Limited | REGISTER_HOUSE | 15500 | STANDALONE_INDIAN_PROMOTER | - | Kapasiawala family (promoters) | LOW |
 | 11 | U17299KA2016PTC096551 | Fonte Fashions India Private Limited | REGISTER_HOUSE | 15500 | STANDALONE_INDIAN_PROMOTER | - | Kala family (promoters) | LOW |
 
-**Pattern:** 18 of 24 contradictions are REGISTER_HOUSE proposals where the register edge is a *downstream* JV/associate stake (the company invests in a foreign-group JV) mis-read as the group owning the company — e.g. AFL (ASL Aviation), Sellowrap (Kaneka), NTC Engineering (Jinmyung), Yeoman Marine (IMS), Sarvesh (Chosun), Flipkart 10–19% minority stakes.
+**Pattern:** 22 of 24 contradictions are REGISTER_HOUSE proposals; most are cases where the register edge is a *downstream* JV/associate stake (the company invests in a foreign-group JV) mis-read as the group owning the company — e.g. AFL (ASL Aviation), Sellowrap (Kaneka), NTC Engineering (Jinmyung), Yeoman Marine (IMS), Sarvesh (Chosun), Flipkart 10–19% minority stakes.
 
 ## 4. Other notable findings
 
