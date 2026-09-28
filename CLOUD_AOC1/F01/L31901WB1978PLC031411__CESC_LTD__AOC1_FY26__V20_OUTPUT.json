@@ -1,0 +1,33 @@
+{
+ "filer": {"name_as_printed":"CESC Limited (logo/masthead only)","cin_as_printed":null,"input_filer_name":"CESC LTD","input_cin":"L31901WB1978PLC031411","fy_as_printed":"Annual Report 2025-26; year ended March 31, 2026"},
+ "page_map": [
+  {"pdf_page":1,"printed_folio":"284","contains":"Notes forming part of consolidated financial statements — Note 55 (Contd.) items (iii)-(x) and para B (labour codes). No AOC-1 content.","proof_first_line":"NOTES FORMING PART OF CONSOLIDATED FINANCIAL STATEMENTS FOR THE YEAR ENDED MARCH 31, 2026 (Contd.) / NOTE - 55 (Contd.)"},
+  {"pdf_page":2,"printed_folio":"285","contains":"Note 56 (security deposit classification), Note 57 (board approval 6th May, 2026), auditor and board signature block. No AOC-1 content.","proof_first_line":"NOTES FORMING PART OF CONSOLIDATED FINANCIAL STATEMENTS FOR THE YEAR ENDED MARCH 31, 2026 (Contd.) / NOTE - 56"}
+ ],
+ "ignored_non_aoc_content": [
+  {"pdf_page":1,"what":"Consolidated FS Note 55 (Contd.) — statutory disclosures (charges with ROC, crypto, intermediaries/funding party, undisclosed income, layers, audit trail, quarterly returns) and para B on labour codes (₹ 35 crores impact)"},
+  {"pdf_page":2,"what":"Consolidated FS Note 56, Note 57, signature block of S.R. Batliboi & Co. LLP (Navin Agrawal, Partner, Kolkata, 6th May, 2026) and Board (Dr. Sanjiv Goenka, Brajesh Singh, Vineet Sikka, Rajarshi Banerjee, Jagdish Patra)"}
+ ],
+ "statement_heading_verbatim": "NOT_FOUND — no Form AOC-1 / statement of subsidiaries, associates or joint ventures is printed on either page of this carve",
+ "layout": "MIXED",
+ "denomination": {"format_class":"FORMAT_3",
+    "s1_unit_lines_verbatim":[], "s1_mid_table_stamps_verbatim":[], "s1_footer_lines_verbatim":[],
+    "statutory_caption_present":false, "inr_unit":null,
+    "foreign_unit":null, "s2_role":"NOTIONAL",
+    "s3_rate_block_verbatim":"NOT_FOUND", "rates_printed":"NONE",
+    "evidence_one_line":"No AOC-1 table exists in the carve; the only money figure is prose '₹ 35 crores' in Note 55 para B, which is not the AOC-1"},
+ "part_a_roster": [],
+ "part_a_count_printed": 0,
+ "part_a_rows": [],
+ "part_a_rows_emitted": 0, "part_a_roster_vs_rows_match": true, "truncated_after": null,
+ "part_b": {"status":"MISSING_EXPECTED","verbatim":"NOT_FOUND — no Part B printed; no AOC-1 heading printed","rows":[]},
+ "notes": {"footnotes_verbatim":[],"yet_to_commence_names":[],"liquidated_sold_merged_ceased_names":[],
+    "other_notes_verbatim":["The above consolidated financial statements were approved by the Board of Directors at their meeting held on 6th May, 2026."],
+    "signature_block":{"date":"6th May, 2026","place":"Kolkata","signatories_count":6}},
+ "restated_inr_crore": [],
+ "restated_part_b": [],
+ "completion": {"part_a_count_printed":0,"part_a_rows_emitted":0,"part_b_rows_emitted":0,
+    "restated_rows_emitted":0,"format_class":"FORMAT_3","truncated":false,"pages_read":[1,2],
+    "sr_sequence_note":"no Sr column — CARVE DOES NOT CONTAIN THE AOC-1: both pages are consolidated FS Notes 55-57 (printed folios 284-285) and the signature block; expected 42 Part A rows, 0 found; wrong pages carved, re-carve needed. CIN not printed; input filer name 'CESC LTD' vs masthead 'CESC LIMITED'.",
+    "model_used":"claude-fable-5-1","read_mode":"visual page read, Read tool"}
+}
